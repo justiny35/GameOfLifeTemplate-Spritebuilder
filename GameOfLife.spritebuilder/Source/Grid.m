@@ -79,10 +79,10 @@ static const int GRID_COLUMNS = 10;
 
 - (Creature *)creatureForTouchPosition:(CGPoint)touchPosition
 {
-    row = touchPosition.y/_cellHeight
-    column = touchPosition.x/_cellWidth
+    int row = touchPosition.y/_cellHeight;
+    int column = touchPosition.x/_cellWidth;
     
-    return _gridArray[row][column]
+    return _gridArray[row][column];
 }
 
 
